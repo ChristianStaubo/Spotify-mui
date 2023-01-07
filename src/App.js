@@ -1,5 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import './App.css';
+import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 
 function App() {
@@ -10,6 +11,9 @@ function App() {
         {/* Sidebar section */}
           <Sidebar />
         {/* Navbar and main section */}
+        <Box sx={{width:'100%'}}>
+          <Navbar />
+        </Box>
       </Box>
       {/* Sidebar */}
       {/* Main */}

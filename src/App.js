@@ -1,12 +1,27 @@
-import { Box, Typography } from '@mui/material';
+import { Box, createTheme, ThemeProvider, Typography } from '@mui/material';
 import './App.css';
 import Main from './components/Main';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 
+const theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 900,
+      md2: 1000,
+      lg: 1200,
+      xl: 1536,
+    },
+  },
+})
+
 function App() {
   return (
-    <div className="App">
+    <ThemeProvider theme={theme}>
+
+    
       {/* Navbar */}
       <Box sx={{display:'flex',flexDirection:'row'}}>
         {/* Sidebar section */}
@@ -19,7 +34,7 @@ function App() {
       </Box>
       {/* Sidebar */}
       {/* Main */}
-    </div>
+      </ThemeProvider>
   );
 }
 

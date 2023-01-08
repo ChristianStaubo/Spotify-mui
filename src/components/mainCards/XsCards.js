@@ -2,9 +2,9 @@ import { Box, Card, CardMedia, Typography } from '@mui/material'
 import peaceFulPianoImg from '../../assets/spotifyPeacefulPiano.jpg'
 import React from 'react'
 
-function xSCards() {
+function XSCards() {
   return (
-    <Box sx={{display:'flex',gap:1,width:'100%',justifyContent:'space-around'}}>
+    <Box sx={{display:'flex',gap:1,width:'100%',justifyContent:'space-between'}}>
                 <Card sx={{width:150,p:2}}>
                     <CardMedia 
                     component='img'
@@ -33,4 +33,4 @@ function xSCards() {
   )
 }
 
-export default xSCards
+export default XSCards

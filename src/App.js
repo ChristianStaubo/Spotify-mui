@@ -1,5 +1,6 @@
 import { Box, createTheme, ThemeProvider, Typography } from '@mui/material';
 import './App.css';
+import BannerFooter from './components/BannerFooter';
 import Main from './components/Main';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
@@ -19,7 +20,7 @@ const theme = createTheme({
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme} sx={{height:'100vh'}}>
 
     
       {/* Navbar */}
@@ -32,6 +33,7 @@ function App() {
           <Main />
         </Box>
       </Box>
+      <BannerFooter />
       {/* Sidebar */}
       {/* Main */}
       </ThemeProvider>

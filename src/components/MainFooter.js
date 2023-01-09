@@ -6,15 +6,15 @@ import React from 'react'
 
 function MainFooter() {
   return (
-    <Box sx={{display:{xs:'block',sm:'flex',justifyContent:'space-between'}}}>
+    <Box sx={{display:{xs:'block',sm:'flex',justifyContent:'space-between',color:'white'}}}>
 
     
     <Box sx={{display:'flex',flexDirection:'row',justifyContent:{xs:'start'},gap:4}}>
         <Box>
-            <Box>
+            <Box sx={{pb:2}}>
                 <Typography fontSize='large'>Company</Typography>
                 </Box>
-            <Box>
+            <Box sx={{display:'flex',flexDirection:'column',gap:1}}>
                 <Typography>About</Typography>
                 <Typography>Jobs</Typography>
                 <Typography>For the Record</Typography>
@@ -22,10 +22,10 @@ function MainFooter() {
         </Box>
 
         <Box>
-            <Box>
+            <Box sx={{pb:2}}>
                 <Typography fontSize='large'>Communities</Typography>
                 </Box>
-            <Box>
+            <Box sx={{display:'flex',flexDirection:'column',gap:1}}>
                 <Typography>For Artists</Typography>
                 <Typography>Developers</Typography>
                 <Typography>Advertising</Typography>
@@ -35,10 +35,10 @@ function MainFooter() {
         </Box>
 
         <Box>
-            <Box>
+            <Box sx={{pb:2}}>
                 <Typography fontSize='large'>Useful links</Typography>
                 </Box>
-            <Box>
+            <Box sx={{display:'flex',flexDirection:'column',gap:1}}>
                 <Typography>Support</Typography>
                 <Typography>Free Mobile App</Typography>
             </Box>

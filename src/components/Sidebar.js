@@ -82,7 +82,7 @@ function Sidebar() {
 
 
         {/* Footer section */}
-        <Box sx={{display:'flex',flexDirection:'column',gap:2,fontSize:10,justifyContent:'center',ml:2,color:'#959595',mt:{lg:20}}}>
+        <Box sx={{display:'flex',flexDirection:'column',gap:2,fontSize:10,justifyContent:'center',ml:2,color:'#959595',mt:{sm:20}}}>
             <Typography sx={{fontSize:11,'&:hover':{
               cursor:'pointer',
               

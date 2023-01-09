@@ -90,7 +90,7 @@ function Main() {
             </Box>
             
         </Box>
-        <Box sx={{pl:2,py:2}}>
+        <Box sx={{pl:2,py:2,mt:8}}>
             <MainFooter />
         </Box>
         

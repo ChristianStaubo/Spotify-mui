@@ -19,11 +19,11 @@ function Main() {
         <Box sx={{pl:2,py:2}}>
             <Box sx={{display:'flex',justifyContent:'space-between',color:'white',alignItems:'center',p:2,backgroundColor:'#1d1d1d'}}>
                 <Typography fontSize={20} fontWeight={600} >Focus</Typography>
-                <Typography sx={{mr:{xs:4,sm:1},fontSize:11,color:'#a7a7a7'}}>SHOW ALL</Typography>
+                <Typography sx={{mr:{xs:4,sm:1},fontSize:{xs:11,sm:14},color:'#a7a7a7'}}>SHOW ALL</Typography>
             </Box>
             {/* CARD SECTION */}
             <Box sx={{display:{xs:'flex',sm:'none'},gap:1,width:'100%',justifyContent:'space-between'}}>
-                <XsCards />
+                <XsCards focusCards={focusCards}/>
             </Box>
 
             <Box sx={{display:{xs:'none',sm:'flex',md:'none'},justifyContent:'space-between'}}>

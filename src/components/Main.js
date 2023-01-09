@@ -13,13 +13,13 @@ import MainFooter from './MainFooter'
 let focusCards = [{title:'Peaceful Piano',text:'Relax and indulge with beautiful piano pieces',img:peaceFulPianoImg},{title:'Deep Focus',text:'Keep calm and focus with ambient and post-rock...',img:DeepFocusImg}]
 function Main() {
   return (
-    <Box >
+    <Box sx={{backgroundColor:'#161616'}}>
 
         {/* First card section */}
         <Box sx={{pl:2,py:2}}>
-            <Box sx={{display:'flex',justifyContent:'space-between'}}>
-                <Typography>Focus</Typography>
-                <Typography sx={{mr:1}}>SHOW ALL</Typography>
+            <Box sx={{display:'flex',justifyContent:'space-between',color:'white',alignItems:'center',p:2,backgroundColor:'#1d1d1d'}}>
+                <Typography fontSize={20} fontWeight={600} >Focus</Typography>
+                <Typography sx={{mr:{xs:4,sm:1},fontSize:11,color:'#a7a7a7'}}>SHOW ALL</Typography>
             </Box>
             {/* CARD SECTION */}
             <Box sx={{display:{xs:'flex',sm:'none'},gap:1,width:'100%',justifyContent:'space-between'}}>

@@ -1,6 +1,12 @@
 import { Box, Card, CardMedia, Typography } from '@mui/material'
 import peaceFulPianoImg from '../assets/spotifyPeacefulPiano.jpg'
 import DeepFocusImg from '../assets/spotifyDeepFocus.jpg'
+import InstrumentalImg from '../assets/spotifyInstrumentalStudy.jpg'
+import chillLofi from '../assets/spotifyChillLofiStudy.jpg'
+import jazzVibes from '../assets/spotfiyJazzVibes.jpg'
+import codingMusic from '../assets/spotifyCodingMode.jpg'
+import focusFlow from '../assets/spotifyFocusFlow.jpg'
+
 import XsCards from './mainCards/XsCards'
 import React from 'react'
 import SmCards from './mainCards/SmCards'
@@ -10,7 +16,7 @@ import Md2Cards from './mainCards/Md2Cards'
 import MainFooter from './MainFooter'
 
 
-let focusCards = [{title:'Peaceful Piano',text:'Relax and indulge with beautiful piano pieces',img:peaceFulPianoImg},{title:'Deep Focus',text:'Keep calm and focus with ambient and post-rock...',img:DeepFocusImg}]
+let focusCards = [{title:'Peaceful Piano',text:'Relax and indulge with beautiful piano pieces',img:peaceFulPianoImg},{title:'Deep Focus',text:'Keep calm and focus with ambient and post-rock...',img:DeepFocusImg},{title:'Instrumental Study',text:'Focus with soft study music in the background.',img:InstrumentalImg},{title:'chill lofi study beats',text:'The perfect study beats. Find your focus,crush...',img:chillLofi},{title:'Jazz Vibes',text:'The original chill instrumental beats...',img:jazzVibes},{title:'Coding Music',text:'Dedicated to all the programmers out there.',img:codingMusic},{title:'Focus Flow',text:'Uptempo instrumental hip hop beats.',img:focusFlow},]
 function Main() {
   return (
     <Box sx={{backgroundColor:'#161616'}}>
@@ -27,20 +33,20 @@ function Main() {
             </Box>
 
             <Box sx={{display:{xs:'none',sm:'flex',md:'none'},justifyContent:'space-between'}}>
-                <SmCards />
+                <SmCards focusCards={focusCards}/>
             </Box>
 
             <Box sx={{display:{xs:'none',md:'flex',md2:'none'},justifyContent:'space-between',width:'100%'}}>
-                <MdCards />
+                <MdCards focusCards={focusCards}/>
             </Box>
 
             <Box sx={{display:{xs:'none',md2:'flex',xl:'none'},justifyContent:'space-between',width:'100%'}}>
-                <Md2Cards />
+                <Md2Cards focusCards={focusCards}/>
             </Box>
 
 
             <Box sx={{display:{xs:'none',xl:'flex'},justifyContent:'space-between',width:'100%'}}>
-                <LgCards />
+                <LgCards focusCards={focusCards}/>
             </Box>
             
         </Box>
@@ -56,20 +62,20 @@ function Main() {
             </Box>
 
             <Box sx={{display:{xs:'none',sm:'flex',md:'none'},justifyContent:'space-between'}}>
-                <SmCards />
+                <SmCards focusCards={focusCards}/>
             </Box>
 
             <Box sx={{display:{xs:'none',md:'flex',md2:'none'},justifyContent:'space-between',width:'100%'}}>
-                <MdCards />
+                <MdCards focusCards={focusCards}/>
             </Box>
 
             <Box sx={{display:{xs:'none',md2:'flex',xl:'none'},justifyContent:'space-between',width:'100%'}}>
-                <Md2Cards />
+                <Md2Cards focusCards={focusCards}/>
             </Box>
 
 
             <Box sx={{display:{xs:'none',xl:'flex'},justifyContent:'space-between',width:'100%'}}>
-                <LgCards />
+                <LgCards focusCards={focusCards}/>
             </Box>
             
         </Box>

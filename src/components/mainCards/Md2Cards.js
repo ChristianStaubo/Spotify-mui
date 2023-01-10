@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react'
 
 function Md2Cards({focusCards}) {
     const [focusCardsToDisplay,setFocusCardsToDisplay] = useState([])
-
+  
     useEffect(() => {
         let newCards = focusCards.slice(0,5)
         setFocusCardsToDisplay(newCards)
@@ -15,7 +15,8 @@ function Md2Cards({focusCards}) {
                 {focusCardsToDisplay.map((card) => {
                     return (
 
-                        <Card  sx={{width:150,p:2,backgroundColor:'#181818','&:hover':{
+                        <Card className='cardHover' 
+                          sx={{width:150,p:2,backgroundColor:'#181818','&:hover':{
                             transition:'ease-in',
                             backgroundColor:'#272727'
                         }}}>
@@ -24,11 +25,19 @@ function Md2Cards({focusCards}) {
                             
                             src={card.img} />
                             
-                                <PlayCircleIcon  sx={{color:'#1ec95b',height:'55px',width:'55px',position:'absolute',ml:11.5,mt:-7,borderRadius:'100%','&:hover':{
-                                    backgroundColor:'blue'
-                      
-                                }}}/>
+                            <Box  className='spotifyIconBox' sx={{display:'none'}}>
+
+                                
+                            <Box  sx={{height:'40px',width:'30px',position:'absolute',ml:12.5,mt:-6,borderRadius:'50%','&:hover':{
+                                backgroundColor:'blue'
+                  
+                            },backgroundColor:'black'}}>
+                            </Box>
                             
+                            <PlayCircleIcon sx={{width:'55px',color:'#1ec95b',height:'55px',position:'absolute',ml:11.5,mt:-7,borderRadius:'50%',}}/>
+                            </Box> : ''
+                            
+                                
                             <Box sx={{display:'flex',flexDirection:'column',gap:2,mt:2}}>
                                 <Typography color={'#fcfcfc'}>{card.title}</Typography>
                                 <Typography variant='caption' color={'#909090'}>{card.text}</Typography>

@@ -6,16 +6,7 @@ import React, { useEffect, useState } from 'react'
 
 function SmCards({focusCards}) {
     const [focusCardsToDisplay,setFocusCardsToDisplay] = useState([])
-    const [hover, setHover] = useState(false);
-  const onHover = () => {
-    console.log('Entering')
-    setHover(true);
-  };
-
-  const onLeave = () => {
-    console.log('Leaving')
-    setHover(false);
-  };
+  
     useEffect(() => {
         let newCards = focusCards.slice(0,3)
         setFocusCardsToDisplay(newCards)
@@ -25,8 +16,8 @@ function SmCards({focusCards}) {
                 {focusCardsToDisplay.map((card) => {
                     return (
 
-                        <Card className='cardHover' onMouseEnter={onHover}
-                        onMouseLeave={onLeave}  sx={{width:150,p:2,backgroundColor:'#181818','&:hover':{
+                        <Card className='cardHover' 
+                          sx={{width:150,p:2,backgroundColor:'#181818','&:hover':{
                             transition:'ease-in',
                             backgroundColor:'#272727'
                         }}}>
@@ -44,7 +35,7 @@ function SmCards({focusCards}) {
                             },backgroundColor:'black'}}>
                             </Box>
                             
-                            <PlayCircleIcon sx={{width:'55px',color:'green',height:'55px',position:'absolute',ml:11.5,mt:-7,borderRadius:'50%',}}/>
+                            <PlayCircleIcon sx={{width:'55px',color:'#1ec95b',height:'55px',position:'absolute',ml:11.5,mt:-7,borderRadius:'50%',}}/>
                             </Box> : ''
                             
                                 

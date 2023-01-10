@@ -19,7 +19,8 @@ function SmCards({focusCards}) {
                         <Card className='cardHover' 
                           sx={{width:150,p:2,backgroundColor:'#181818','&:hover':{
                             transition:'ease-in',
-                            backgroundColor:'#272727'
+                            backgroundColor:'#272727',
+                            cursor:'pointer'
                         }}}>
                             <CardMedia 
                             component='img'

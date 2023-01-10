@@ -13,6 +13,8 @@ import rockClassics from '../assets/spotifyRockClassics.jpg'
 import chillHits from '../assets/spotifyChillHits.jpg'
 import vivaLatino from '../assets/spotifyVivaLatino.jpg'
 import megaHitMix from '../assets/spotifyMegaHitMix.jpg'
+import workdayLounge from '../assets/spotifyWorkDayLoungejpg.jpg'
+import allOut80s from '../assets/spotifyAllOut80s.jpg'
 
 import XsCards from './mainCards/XsCards'
 import React from 'react'
@@ -24,9 +26,9 @@ import MainFooter from './MainFooter'
 import XlCards from './mainCards/XlCards'
 
 
-let focusCards = [{title:'Peaceful Piano',text:'Relax and indulge with beautiful piano pieces',img:peaceFulPianoImg},{title:'Deep Focus',text:'Keep calm and focus with ambient and post-rock...',img:DeepFocusImg},{title:'Instrumental Study',text:'Focus with soft study music in the background.',img:InstrumentalImg},{title:'chill lofi study beats',text:'The perfect study beats. Find your focus,crush...',img:chillLofi},{title:'Jazz Vibes',text:'The original chill instrumental beats...',img:jazzVibes},{title:'Coding Music',text:'Dedicated to all the programmers out there.',img:codingMusic},{title:'Focus Flow',text:'Uptempo instrumental hip hop beats.',img:focusFlow},{title:'Coding Music',text:'Dedicated to all the programmers out there.',img:codingMusic},{title:'Focus Flow',text:'Uptempo instrumental hip hop beats.',img:focusFlow}]
+let focusCards = [{title:'Peaceful Piano',text:'Relax and indulge with beautiful piano pieces',img:peaceFulPianoImg},{title:'Deep Focus',text:'Keep calm and focus with ambient and post-rock...',img:DeepFocusImg},{title:'Instrumental Study',text:'Focus with soft study music in the background.',img:InstrumentalImg},{title:'chill lofi study beats',text:'The perfect study beats. Find your focus,crush...',img:chillLofi},{title:'Jazz Vibes',text:'The original chill instrumental beats...',img:jazzVibes},{title:'Coding Music',text:'Dedicated to all the programmers out there.',img:codingMusic},{title:'Focus Flow',text:'Uptempo instrumental hip hop beats.',img:focusFlow},{title:'Workday Lounge',text:'Lounge and chill out music for your workday.',img:workdayLounge}]
 
-let spotifyPlaylists = [{title:`Today's Top Hits`,text:'RAYE is on top of the Hottest 50!',img:todayTopHits},{title:'RapCaviar',text:'Music by Moneybagg Yo, Lil Durk, Drake and 21...',img:rapCaviar},{title:'All Out 2010s',text:'The biggest songs of the 2010s',img:allOut2010s},{title:'Rock Classics',text:'Rock legends & epic songs that continue to...',img:rockClassics},{title:'Chill Hits',text:'Kick back to the best new and recent chill hits',img:chillHits},{title:'Viva Latino',text:`Today's top Latin hits, elevando nuestra músic`,img:vivaLatino},{title:'Mega Hit Mix',text:'A mega mix of 75 favorites from the last...',img:megaHitMix},{title:'Mega Hit Mix',text:'A mega mix of 75 favorites from the last...',img:megaHitMix}]
+let spotifyPlaylists = [{title:`Today's Top Hits`,text:'RAYE is on top of the Hottest 50!',img:todayTopHits},{title:'RapCaviar',text:'Music by Moneybagg Yo, Lil Durk, Drake and 21...',img:rapCaviar},{title:'All Out 2010s',text:'The biggest songs of the 2010s',img:allOut2010s},{title:'Rock Classics',text:'Rock legends & epic songs that continue to...',img:rockClassics},{title:'Chill Hits',text:'Kick back to the best new and recent chill hits',img:chillHits},{title:'Viva Latino',text:`Today's top Latin hits, elevando nuestra músic`,img:vivaLatino},{title:'Mega Hit Mix',text:'A mega mix of 75 favorites from the last...',img:megaHitMix},{title:'All Out 80s',text:'the biggest songs of the 1980s',img:allOut80s}]
 
 
 function Main() {
@@ -36,8 +38,14 @@ function Main() {
         {/* First card section */}
         <Box sx={{pl:2,py:2,mx:{sm2:5}}}>
             <Box sx={{display:'flex',justifyContent:'space-between',color:'white',alignItems:'center',p:2}}>
-                <Typography fontSize={20} fontWeight={600} >Focus</Typography>
-                <Typography sx={{mr:{xs:4,sm:1},fontSize:{xs:11,sm:14},color:'#a7a7a7',fontWeight:{sm:500},letterSpacing:1}}>SHOW ALL</Typography>
+                <Typography fontSize={20} fontWeight={600}  sx={{'&:hover':{
+                    cursor:'pointer',
+                    textDecoration:'underline'
+                }}}>Focus</Typography>
+                <Typography sx={{mr:{xs:4,sm:1},fontSize:{xs:11,sm:14},color:'#a7a7a7',fontWeight:{sm:500},letterSpacing:1,'&:hover':{
+                    cursor:'pointer',
+                    textDecoration:'underline'
+                }}}>SHOW ALL</Typography>
             </Box>
             {/* CARD SECTION */}
             <Box sx={{display:{xs:'flex',sm:'none'},gap:1,width:'100%',justifyContent:'space-between'}}>
@@ -70,8 +78,14 @@ function Main() {
         {/* Second card section */}
         <Box sx={{pl:2,py:2,mx:{sm2:5}}}>
         <Box sx={{display:'flex',justifyContent:'space-between',color:'white',alignItems:'center',px:2,pb:2}}>
-                <Typography fontSize={20} fontWeight={600} >Spotify Playlists</Typography>
-                <Typography sx={{mr:{xs:4,sm:1},fontSize:{xs:11,sm:14},color:'#a7a7a7',fontWeight:{sm:500},letterSpacing:1}}>SHOW ALL</Typography>
+                <Typography fontSize={20} fontWeight={600} sx={{'&:hover':{
+                    cursor:'pointer',
+                    textDecoration:'underline'
+                }}}>Spotify Playlists</Typography>
+                <Typography sx={{mr:{xs:4,sm:1},fontSize:{xs:11,sm:14},color:'#a7a7a7',fontWeight:{sm:500},letterSpacing:1,'&:hover':{
+                    cursor:'pointer',
+                    textDecoration:'underline'
+                }}}>SHOW ALL</Typography>
             </Box>
             {/* CARD SECTION */}
             <Box sx={{display:{xs:'flex',sm:'none'},gap:1,width:'100%',justifyContent:'space-around'}}>

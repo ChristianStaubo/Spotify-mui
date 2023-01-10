@@ -50,7 +50,7 @@ function Navbar() {
             },fontSize:'17px',letterSpacing:1}}>Download</Button>
             <Box sx={{width:'1px',height:'25px',backgroundColor:'white',my:'auto',ml:10}}></Box>
         </Box>
-            <Box sx={{mr:1}}>
+            <Box sx={{mr:{xs:1,md:8,lg:1},pr:1,display:{xs:'none',sm:'flex',md:'block'},alignItems:'center'}}>
 
             <Button sx={{borderRadius:40,py:1.5,px:3,color:'#a7a7a7',textTransform:'none','&:hover':{
               backgroundColor:'#0f0f0f',
@@ -65,7 +65,9 @@ function Navbar() {
             transform:'scale(1.05)',
             backgroundColor:'white'
         },mr:{lg:1}}}>Log in</Button>
-            <MenuIcon sx={{ml:1,display:{xs:'block',md:'none'}}}/>
+            <MenuIcon sx={{ml:1,display:{xs:'block',md:'none',color:'white','&:hover':{
+                    cursor:'pointer'
+                }}}}/>
             </Box>
         </Box>
     </Box>

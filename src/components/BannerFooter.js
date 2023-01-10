@@ -13,7 +13,7 @@ function BannerFooter() {
         <Button sx={{my:'auto',color:'black',backgroundColor:'white',borderRadius:10,height:'45px',width:'150px',textTransform:'none',fontWeight:600,mr:2,'&:hover':{
             transform:'scale(1.05)',
             backgroundColor:'white'
-        }}}>Sign up for free</Button>
+        }}}>Sign up free</Button>
     </Box>
   )
 }

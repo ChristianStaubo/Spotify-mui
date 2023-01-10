@@ -16,7 +16,7 @@ function Navbar() {
           }}}/> 
         </Box>
         <Box sx={{ml:1,p:0.5,borderRadius:'100%',backgroundColor:'#090909'}}>
-          <ArrowBackIosNewIcon sx={{color:'#828282',display:{xs:'none',md:'block',},transform:'rotate(180deg)','&:hover': {
+          <ArrowBackIosNewIcon sx={{color:'#828282',display:{xs:'none',lg:'block',},transform:'rotate(180deg)','&:hover': {
             cursor:'not-allowed'
           }}}/> 
         </Box>
@@ -30,41 +30,43 @@ function Navbar() {
             <Button sx={{color:'#8e8e8e',textTransform:'none','&:hover':{
               color:'white',
               fontWeight:'500',
+              transform:'scale(1.05)',
               cursor:'auto'
               
             },fontSize:'17px',letterSpacing:1}}>Premium</Button>
             <Button sx={{color:'#8e8e8e',textTransform:'none','&:hover':{
               color:'white',
               fontWeight:'500',
+              transform:'scale(1.05)',
               cursor:'auto'
               
             },fontSize:'17px',letterSpacing:1}}>Support</Button>
             <Button sx={{color:'#8e8e8e',textTransform:'none','&:hover':{
               color:'white',
               fontWeight:'500',
+              transform:'scale(1.05)',
               cursor:'auto'
               
             },fontSize:'17px',letterSpacing:1}}>Download</Button>
             <Box sx={{width:'1px',height:'25px',backgroundColor:'white',my:'auto',ml:10}}></Box>
         </Box>
-            <Button sx={{borderRadius:40,py:1,px:2.5,color:'#a7a7a7',textTransform:'none','&:hover':{
+            <Box sx={{mr:1}}>
+
+            <Button sx={{borderRadius:40,py:1.5,px:3,color:'#a7a7a7',textTransform:'none','&:hover':{
               backgroundColor:'#0f0f0f',
               fontWeight:'700',
-              
+              transform:'scale(1.05)',
               cursor:'auto',
               color:'white'
 
               
             }}}>Sign up</Button>
-            <Button sx={{borderRadius:40,py:1,px:2.5,backgroundColor:'white',color:'black',textTransform:'none',fontWeight:'600','&:hover':{
-              backgroundColor:'white',
-              fontWeight:'700',
-              
-              cursor:'auto'
-
-              
-            },mr:{lg:1}}}>Log in</Button>
+            <Button sx={{borderRadius:40,py:1.5,px:3,backgroundColor:'white',color:'black',textTransform:'none',fontWeight:'600','&:hover':{
+            transform:'scale(1.05)',
+            backgroundColor:'white'
+        },mr:{lg:1}}}>Log in</Button>
             <MenuIcon sx={{ml:1,display:{xs:'block',md:'none'}}}/>
+            </Box>
         </Box>
     </Box>
     </Box>

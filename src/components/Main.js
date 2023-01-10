@@ -34,7 +34,7 @@ function Main() {
 
         {/* First card section */}
         <Box sx={{pl:2,py:2}}>
-            <Box sx={{display:'flex',justifyContent:'space-between',color:'white',alignItems:'center',p:2,backgroundColor:'#1d1d1d'}}>
+            <Box sx={{display:'flex',justifyContent:'space-between',color:'white',alignItems:'center',p:2}}>
                 <Typography fontSize={20} fontWeight={600} >Focus</Typography>
                 <Typography sx={{mr:{xs:4,sm:1},fontSize:{xs:11,sm:14},color:'#a7a7a7',fontWeight:{sm:500},letterSpacing:1}}>SHOW ALL</Typography>
             </Box>

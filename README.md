@@ -4,7 +4,7 @@
 
 ## Description
 
-This project is a mock up of Spotify's desktop web player using MUI. compare it to the original @ [spotify](https://.spotify.com/)
+This project is a mock up of Spotify's desktop web player using MUI. compare it to the original @ [spotify](https://spotify.com/)
 
 ### Why did I make this project
 

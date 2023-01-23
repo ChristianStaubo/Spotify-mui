@@ -3,11 +3,11 @@ import peaceFulPianoImg from '../../assets/spotifyPeacefulPiano.jpg'
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import React, { useEffect, useState } from 'react'
 
-function XlCards({focusCards}) {
+function Xl2Cards({focusCards}) {
     const [focusCardsToDisplay,setFocusCardsToDisplay] = useState([])
   
     useEffect(() => {
-        let newCards = focusCards.slice(0,7)
+        let newCards = focusCards.slice(0,8)
         setFocusCardsToDisplay(newCards)
     },[focusCards])
   return (
@@ -54,4 +54,4 @@ function XlCards({focusCards}) {
   )
 }
 
-export default XlCards
+export default Xl2Cards

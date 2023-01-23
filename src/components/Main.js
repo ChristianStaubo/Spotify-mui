@@ -24,6 +24,7 @@ import LgCards from './mainCards/LgCards'
 import Md2Cards from './mainCards/Md2Cards'
 import MainFooter from './MainFooter'
 import XlCards from './mainCards/XlCards'
+import Xl2Cards from './mainCards/Xl2Cards'
 
 
 let focusCards = [{title:'Peaceful Piano',text:'Relax and indulge with beautiful piano pieces',img:peaceFulPianoImg},{title:'Deep Focus',text:'Keep calm and focus with ambient and post-rock...',img:DeepFocusImg},{title:'Instrumental Study',text:'Focus with soft study music in the background.',img:InstrumentalImg},{title:'chill lofi study beats',text:'The perfect study beats. Find your focus,crush...',img:chillLofi},{title:'Jazz Vibes',text:'The original chill instrumental beats...',img:jazzVibes},{title:'Coding Music',text:'Dedicated to all the programmers out there.',img:codingMusic},{title:'Focus Flow',text:'Uptempo instrumental hip hop beats.',img:focusFlow},{title:'Workday Lounge',text:'Lounge and chill out music for your workday.',img:workdayLounge}]
@@ -69,8 +70,12 @@ function Main() {
                 <LgCards focusCards={focusCards}/>
             </Box>
 
-            <Box sx={{display:{xs:'none',xl:'flex'},justifyContent:'space-between',width:'100%'}}>
+            <Box sx={{display:{xs:'none',xl:'flex',xl2:'none'},justifyContent:'space-between',width:'100%'}}>
                 <XlCards focusCards={focusCards}/>
+            </Box>
+
+            <Box sx={{display:{xs:'none',xl2:'flex'},justifyContent:'space-between',width:'100%'}}>
+                <Xl2Cards focusCards={focusCards}/>
             </Box>
             
         </Box>
@@ -109,8 +114,12 @@ function Main() {
                 <LgCards focusCards={spotifyPlaylists}/>
             </Box>
 
-            <Box sx={{display:{xs:'none',xl:'flex'},justifyContent:'space-between',width:'100%'}}>
+            <Box sx={{display:{xs:'none',xl:'flex',xl2:'none'},justifyContent:'space-between',width:'100%'}}>
                 <XlCards focusCards={spotifyPlaylists}/>
+            </Box>
+
+            <Box sx={{display:{xs:'none',xl2:'flex'},justifyContent:'space-between',width:'100%'}}>
+                <Xl2Cards focusCards={spotifyPlaylists}/>
             </Box>
             
         </Box>
